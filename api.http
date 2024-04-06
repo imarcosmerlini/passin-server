@@ -2,7 +2,22 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Robson Day",
-  "details": "Dia do Robson",
-  "maximumAttendees": 100
+  "title": "Olokinho",
+  "details": null,
+  "maximumAttendees": 1
 }
+
+###
+POST http://localhost:3333/events/c57da92c-c6ed-41c8-8d5d-3391daf62386/attendees
+Content-Type: application/json
+
+{
+  "name": "Robson",
+  "email": "robson22@noreply.com.br"
+}
+
+###
+GET http://localhost:3333/events/c57da92c-c6ed-41c8-8d5d-3391daf62386
+
+###
+GET http://localhost:3333/attendees/2/badge
