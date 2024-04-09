@@ -1,30 +1,33 @@
 {
-  "name": "passin-server",
-  "version": "1.0.0",
-  "description": "O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**.",
-  "main": "index.js",
-  "scripts": {
-    "dev": "tsx watch --env-file .env ./src/server.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.12.4",
-    "eslint": "^8.2.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "prisma": "^5.12.1",
-    "tsx": "^4.7.2",
-    "typescript": "^5.4.4"
-  },
-  "dependencies": {
-    "@prisma/client": "^5.12.1",
-    "fastify": "^4.26.2",
-    "fastify-type-provider-zod": "^1.1.9",
-    "zod": "^3.22.4"
-  }
+    "name": "passin-server",
+    "version": "1.0.0",
+    "description": "O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsx watch --env-file .env ./src/server.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "prisma": {
+        "seed": "tsx prisma/seed.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.4",
+        "eslint": "^8.2.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.28.0",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "prisma": "^5.12.1",
+        "tsx": "^4.7.2",
+        "typescript": "^5.4.4"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.12.1",
+        "fastify": "^4.26.2",
+        "fastify-type-provider-zod": "^1.1.9",
+        "zod": "^3.22.4"
+    }
 }
