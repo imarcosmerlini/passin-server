@@ -21,3 +21,6 @@ GET http://localhost:3333/events/c57da92c-c6ed-41c8-8d5d-3391daf62386
 
 ###
 GET http://localhost:3333/attendees/2/badge
+
+###
+GET http://localhost:3333/attendees/2/check-in
